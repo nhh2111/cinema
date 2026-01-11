@@ -37,7 +37,7 @@ if ($unique_id) {
     <div class="pagetong">
 
         <div class="anhbia">
-            <img style="width: 100%; height: 500px" src="/cinemaWeb1/Images/anhtop1.jpg">
+            <img style="width: 100%; height: 500px" src="/cinemaWeb1/Images/anhtop2.png">
         </div>
 
         <?php
