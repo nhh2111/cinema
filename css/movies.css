@@ -1,0 +1,88 @@
+.main {
+    margin-left: 180px;
+    margin-right: 180px;
+    flex-wrap: wrap;
+}
+.centerMain {
+    display:flex;
+    margin-top: 30px;
+    
+}
+.phim1 {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+}
+.thongTin1 {
+    margin-left: 27px;
+}
+.font1 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 40px;  /* Cỡ chữ */
+}
+.font2 {
+    margin-top:0px;
+    font-size: 20px;  /* Cỡ chữ */
+}
+.trailer {
+    background: linear-gradient(to bottom, #3a4492, #1a1f44);
+    height:500px;
+    margin-top:40px;
+}
+.trailerText {
+    color:white;
+    text-align:center;
+    font-size: 35px;
+    padding-top: 20px;
+}
+.underline-gradient::after {
+    content: ''; /* Tạo một phần tử giả */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; /* Độ dày của đường gạch chân */
+    background: linear-gradient(to right, #ffffff, #000000); /* Gradient từ trắng sang đen */
+}
+.videoContainer {
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.suatChieu {
+    margin-top:20px;
+    width: 100%;
+}
+.days-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+.day {
+    display:flex;
+
+}
+.days-container h2 {
+    margin-top:24px;
+    padding: 0;
+  }
+button.day {
+    border:none;
+    background-color: transparent;
+}
+button.chonGiochieu {
+    padding-right: 20px;  /* Tùy chọn để thêm không gian xung quanh chữ */
+    padding-left: 20px;
+    margin-right:30px;
+    width:100px;
+    height:35px;
+}
+.showtimes {
+    margin-top: 20px;
+    clear: both;
+    display: none; /* Ẩn tất cả suất chiếu mặc định */
+  }
+button.day:focus {
+    color: #1E90FF;  /* Thay đổi màu chữ thành xanh lam khi nhấn */
+}

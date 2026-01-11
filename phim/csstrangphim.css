@@ -1,0 +1,61 @@
+.main {
+    margin-left: 180px;
+    margin-right: 180px;
+    flex-wrap: wrap;
+}
+.centerMain {
+    display:flex;
+    margin-top: 30px;
+    
+}
+.phim1 {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+}
+.thongTin1 {
+    margin-left: 27px;
+}
+.font1 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 40px;  /* Cỡ chữ */
+}
+.font2 {
+    margin-top:0px;
+    font-size: 20px;  /* Cỡ chữ */
+}
+.trailer {
+    text-align: center;
+    background: linear-gradient(to bottom, #3a4492, #1a1f44);
+    height:500px;
+    margin-top:40px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.trailerText {
+    color:white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.underline-gradient::after {
+    content: ''; /* Tạo một phần tử giả */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; /* Độ dày của đường gạch chân */
+    background: linear-gradient(to right, #ffffff, #000000); /* Gradient từ trắng sang đen */
+}
+.videoContainer {
+    align-items: center;
+    position: relative;
+   
+}
+
+
+.main-trailer {
+   margin: auto;
+   
+}

@@ -1,0 +1,107 @@
+body {
+    position: relative;
+    background-color: #00b3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+::selection {
+    color: #ececec;
+    background-color: #00b3ff;
+}
+
+.form {
+    position: relative;
+    background-color: #f2f3f7;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+}
+
+.form h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.form p {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.form form {
+    margin: 10px;
+}
+
+.form form .error-text {
+    color: #851923;
+    display: none;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3e5;
+    border: 1px solid #dfa5ab;
+    margin-bottom: 8px;
+}
+
+.form .grid-details {
+    display: flex;
+}
+
+.form .grid-details .input:first-child {
+    margin-right: 8px;
+    width: 100%;
+}
+
+.form .grid-details .input:last-child {
+    margin-left: 8px;
+    width: 100%;
+}
+
+.form form .input input {
+    height: 40px;
+    width: 90%;
+    font-style: 14px;
+    margin: 5px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form form .input input:focus,
+.form form .input input:valid {
+    border: 2px solid #00b3ff;
+    transition: 0.1s ease;
+    outline: none;
+}
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: #f2f3f7;
+    width: 100%;
+    background-color: #006692;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    border: 2px solid #2938aa;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: #006692;
+    text-decoration: none;
+    transition: 0.5 all;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}

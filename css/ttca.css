@@ -1,0 +1,50 @@
+.file-upload {
+    display: none;
+}
+
+.custom-upload {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-upload:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    background-color: #333;
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.info a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}

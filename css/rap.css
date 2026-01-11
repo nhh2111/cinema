@@ -1,0 +1,94 @@
+
+.main{
+    display: flex;
+}
+
+.main1{
+    background-color: white;
+    height: auto;
+    width: 50%;
+    margin-left: 40px;
+  
+}
+.main2{
+    text-align: center;
+    margin-right: 60px;
+    width: 50%;
+}
+.main2 img{
+    margin: 20 20 20 20;
+}
+
+/* Menu chính */
+#main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Đặt position: relative cho các mục chính */
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: blue;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Sub-menu: Menu con xuất hiện bên phải */
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    border: 1px solid black;
+    list-style: none;
+    width: 100px;
+    display: none;
+    left: 100%; /* Đẩy menu con sang bên phải của mục cha */
+    top: 0; /* Đặt menu con tại vị trí giống với mục cha */
+}
+
+/* Hiển thị menu con khi di chuột vào menu cha */
+#main-menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+/* Sub-menu cấp 2: Nếu có menu con cấp 2, nó sẽ xuất hiện bên phải */
+#main-menu ul.sub-menu ul.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Đẩy sang phải của menu con cấp 1 */
+    display: none;
+}
+
+/* Hiển thị đúng cấp 2 khi di chuột vào item trong cấp 1 */
+#main-menu ul.sub-menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+/* Màu nền và hiệu ứng khi hover vào các mục trong menu con */
+#main-menu ul.sub-menu li:hover > a {
+    color: aliceblue;
+    background-color: aquamarine;
+}
+
+/* Hiệu ứng underline cho menu chính khi hover */
+#main-menu > li > a {
+    position: relative;
+}
+
+#main-menu > li > a::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: red;
+    transition: width 0.3s ease;
+}

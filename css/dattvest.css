@@ -1,0 +1,51 @@
+body {
+  background-color: #f7f7f8;
+  font-family: Arial, sans-serif;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seat-row {
+  display: flex;
+  gap: 10px;
+}
+
+.seat {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.seat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seat span {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #000;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
